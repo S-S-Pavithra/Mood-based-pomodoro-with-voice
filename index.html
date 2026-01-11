@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>final</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mood Based Pomodoro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light blue">
+
+  <!-- Animated Background -->
+  <ul class="circles">
+    <li></li><li></li><li></li><li></li><li></li>
+    <li></li><li></li><li></li><li></li><li></li>
+  </ul>
+
+  <div class="container">
+    <h1>Select Your Mood</h1>
+
+    <div class="moods">
+      <button onclick="setMood('tired')">😴 Tired</button>
+      <button onclick="setMood('normal')">😐 Normal</button>
+      <button onclick="setMood('motivated')">🔥 Motivated</button>
+    </div>
+
+    <p id="lastMood">Last selected mood: tired</p>
+
+    <label class="voice">
+      <input type="checkbox" id="voiceToggle" checked />
+      Calm Voice Assistant
+    </label>
+
+    <button class="themeBtn" onclick="toggleTheme()">🌙 Toggle Dark / Light</button>
+
+    <h2 id="mode">Study Time</h2>
+    <div id="timer">25:00</div>
+
+    <div class="controls">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <p>Sessions Completed Today: <span id="sessions">0</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
