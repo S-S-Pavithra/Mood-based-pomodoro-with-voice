@@ -24,7 +24,7 @@ body.blue { --main: #3b82f6; }
 body.yellow { --main: #facc15; }
 body.red { --main: #ef4444; }
 
-/* ---------- CONTAINER ---------- */
+
 .container {
   position: relative;
   z-index: 2;
