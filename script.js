@@ -4,11 +4,9 @@ let time = workTime;
 let timer = null;
 let isStudy = true;
 
-/* ---------- STORAGE ---------- */
 let sessions = Number(localStorage.getItem("sessions")) || 0;
 document.getElementById("sessions").innerText = sessions;
 
-/* ---------- VOICE ---------- */
 function speak(msg) {
   if (!document.getElementById("voiceToggle").checked) return;
   const speech = new SpeechSynthesisUtterance(msg);
@@ -17,7 +15,6 @@ function speak(msg) {
   window.speechSynthesis.speak(speech);
 }
 
-/* ---------- MOOD ---------- */
 function setMood(mood) {
   document.body.classList.remove("blue", "yellow", "red");
 
@@ -46,7 +43,6 @@ function setMood(mood) {
   resetTimer();
 }
 
-/* ---------- TIMER ---------- */
 function startTimer() {
   if (timer) return;
 
@@ -91,7 +87,6 @@ function updateTimer() {
     `${m}:${s < 10 ? "0" : ""}${s}`;
 }
 
-/* ---------- THEME ---------- */
 function toggleTheme() {
   document.body.classList.toggle("dark");
   document.body.classList.toggle("light");
